@@ -1,0 +1,204 @@
+.header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0;
+  padding: 5% 2.6%;
+  @media screen and (max-width: 1024px) {
+    padding-top: 8%;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 11vh;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 14% 1%;
+  }
+  .logo{
+    width: 60px;
+    z-index: 9999;
+    .hideLogo{
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+    img {
+      display: flex;
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .points{
+      pointer-events: none;
+      cursor: default;
+      display: none;
+      align-items: flex-end;
+      align-items: center;
+      color: white;
+      width: 50%;
+      height: 0;
+      margin-right: 20px;
+      z-index: 9999;
+      transition: 0.4s all;
+      @media screen and (max-width: 768px) {
+        margin-top: 0%;
+        margin-right: 25px;
+      }
+      @media screen and (max-width: 480px) {
+        justify-content: space-between;
+        width: 67vw;
+        margin-right: 5vw;
+        opacity: 0;
+      }
+      p:nth-child(5){
+        display: none;
+      }
+      p:nth-child(3){
+        display: block;
+        @media screen and (max-width: 480px) {
+          display: none;
+        }
+      }
+      p:nth-child(4){
+        display: none;
+        @media screen and (max-width: 480px) {
+          display: block;
+        }
+      }
+      p{
+        flex-shrink: 0;
+        font-family: 'Royal';
+        background: #222426;
+        padding: 5px;
+        margin-right: 3vw;
+        font-size: 18px;
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          padding: 1vw;
+        }
+        @media screen and (max-width: 480px) {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+      p:hover{
+        color: rgba(110, 202, 185, 1);        
+      }
+    }
+    .showPoints {
+      display: flex;
+      pointer-events: all;
+      @media screen and (max-width: 480px) {
+        opacity: 1;
+      }
+    }
+    .menu-bar{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 9910;
+      right: 2vw;
+      width: 3vw;
+      @media screen and (max-width: 768px) {
+        width: 4vw;
+      }
+      @media screen and (max-width: 480px) {
+        width: 10vw;
+      }
+      hr{
+        color: rgba(240, 240, 240, 1);
+        width: 32px;
+        margin: 5px;
+        transition: 0.4s;
+        background: white;
+      }
+      hr:nth-child(2){
+        width: 20px;
+      }
+      hr:nth-child(1).active{
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 8px);
+      }
+      hr:nth-child(2).active{
+        width: 510px;
+        margin-right: 6.4vw;
+        @media screen and (max-width: 1024px) {
+          margin-right: 8vw;
+          width: 490px;
+       }
+       @media screen and (max-width: 768px) {
+         margin-right: 10vw;
+         width: 375px;
+       }
+        @media screen and (max-width: 480px) {
+          width: 74vw;
+          margin-right: 14vw;
+       }
+      }
+      hr:nth-child(3).active{
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+  }
+}
+
+.name{
+  position: absolute;
+  top: 46vh;
+  left: 44%;
+  width: 60%;
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 9999;
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+    top: 50vh;
+    left: 0;
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    top: 52%;
+  }
+  @media screen and (max-width: 480px) {
+    top: 45%;
+  }
+  h1{
+    color: rgba(236, 244, 244, 1);
+    font-family: 'ArcaMajora3';
+    font-weight: 400;
+    font-size: 6vw;
+    letter-spacing: 6px;
+    @media screen and (max-width: 1024px) {
+      font-size: 8vw;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 11vw;
+      @media screen and (max-height: 768px) {
+        font-size: 10vw;
+      }
+    }
+  }
+  h1:nth-child(2){
+    margin-top: 1.4%;
+    margin-left: 5%;
+    @media screen and (max-width: 1024px) {
+      margin-left: 0%;
+      font-size: 5vw;
+      @media screen and (max-height: 768px) {
+        font-size: 4vw;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      margin-top: 8%;
+      font-size: 6vw;
+    }
+  }
+}

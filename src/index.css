@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'ArcaMajora3';
+  src: local('ArcaMajora3'), url(./fonts/Gontserrat/Gontserrat-Light.ttf);
+}
+@font-face {
+  font-family: 'Royal';
+  src: local('Royal'), url(./fonts/blogger-sans.regular.otf);
+}
+* {
+  margin: 0;
+}
+body {
+  background: #222426;
+  margin: 0;
+  overflow: hidden;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.background{
+  position: absolute;
+}
+.body-content{
+  flex-grow: 1;
+}
+.footer{
+  flex-grow: 0;
+}

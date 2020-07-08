@@ -1,0 +1,57 @@
+.contact{
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  width: 38%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+  font-family: 'Royal';
+  font-size:  30px;
+  color: white;
+  z-index: 9999;
+  @media screen and (max-width: 1024px) {
+    left: 5%;
+    top: 50vh;
+  }
+  p{
+    margin-left: -3%;
+    margin-bottom: 1%;
+  }
+  label{
+    font-size:  22px;
+    margin-top: 1%;
+    margin-left: -2%;
+  }
+  input{
+    margin: 2% 2% 0% 0%;
+    padding: 1% 2% 1% 1%;
+    border: 1px solid grey;
+    background: rgba(240, 240, 240, 0.14);
+    color: white;
+    font-size:  16px;
+  }
+  .input{
+    display: flex;
+    div{
+      display: flex;
+      flex-direction: column;
+      width: 49%;
+      input{
+        padding: 1% 2% 1% 1%;
+      }
+    }
+  }
+  .input-text{
+    display: flex;
+    flex-direction: column;
+    input{
+      margin-right: 3%;
+    }
+    input:nth-child(4){
+      padding: 1% 2% 14% 1%;
+    }
+  }
+}
