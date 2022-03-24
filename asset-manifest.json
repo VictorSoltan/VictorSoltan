@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/VictorSoltan/static/css/main.3dd01575.css",
-    "main.js": "/VictorSoltan/static/js/main.4c7fa2c5.js",
+    "main.css": "/VictorSoltan/static/css/main.c33d06c9.css",
+    "main.js": "/VictorSoltan/static/js/main.dc5c1a7f.js",
     "static/media/tehnopunki.png": "/VictorSoltan/static/media/tehnopunki.58cf502ea26d4b6cbb2e.png",
     "static/media/archart.png": "/VictorSoltan/static/media/archart.5e849c9362b4d2b7c65f.png",
     "static/media/leaf.png": "/VictorSoltan/static/media/leaf.878eee1ab9f8fe183089.png",
@@ -11,11 +11,11 @@
     "static/media/atom.png": "/VictorSoltan/static/media/atom.1f52ca253ce403eacf05.png",
     "static/media/css.png": "/VictorSoltan/static/media/css.3eafe6322b0e7909c496.png",
     "index.html": "/VictorSoltan/index.html",
-    "main.3dd01575.css.map": "/VictorSoltan/static/css/main.3dd01575.css.map",
-    "main.4c7fa2c5.js.map": "/VictorSoltan/static/js/main.4c7fa2c5.js.map"
+    "main.c33d06c9.css.map": "/VictorSoltan/static/css/main.c33d06c9.css.map",
+    "main.dc5c1a7f.js.map": "/VictorSoltan/static/js/main.dc5c1a7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dd01575.css",
-    "static/js/main.4c7fa2c5.js"
+    "static/css/main.c33d06c9.css",
+    "static/js/main.dc5c1a7f.js"
   ]
 }
