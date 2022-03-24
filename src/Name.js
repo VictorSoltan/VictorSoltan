@@ -8,7 +8,7 @@ import './name.scss'
 
 class Name extends React.Component {
   state = {
-    showMenu: true,
+    showMenu: false,
     showName: true,
     showSkills: false,
     showAboutMe: false,
@@ -68,16 +68,16 @@ class Name extends React.Component {
   render() {
     return (
         <div className="content">
-         <div className="header">
+         <header>
           <div className="logo" onClick={ this.displayName }>
             <img className={ this.state.showMenu ? 'hideLogo' : ''} src={v} alt="v.logo" />
           </div>
           <div className="menu">
            <div className={ this.state.showMenu ? 'points showPoints' : 'points'}>
-            <p onClick={this.AboutMe} style={{ color: this.state.showAboutMe ? 'rgba(120, 202, 185, 1)' : '' }}>Обо мне</p>
-            <p onClick={this.MySkills} style={{ color: this.state.showSkills ? 'rgba(110, 202, 185, 1)' : '' }}>Мои навыки</p>
+            <p onClick={this.AboutMe} style={{ color: this.state.showAboutMe ? 'rgba(120, 202, 185, 1)' : '' }}>About me</p>
+            <p onClick={this.MySkills} style={{ color: this.state.showSkills ? 'rgba(110, 202, 185, 1)' : '' }}>My skills</p>
             <p onClick={this.Portfolio} style={{ color: this.state.showPortfolio ? 'rgba(110, 202, 185, 1)' : '' }}>Портфолио c работами</p>
-            <p onClick={this.Portfolio} style={{ color: this.state.showPortfolio ? 'rgba(110, 202, 185, 1)' : '' }}>Портфолио</p>
+            <p onClick={this.Portfolio} style={{ color: this.state.showPortfolio ? 'rgba(110, 202, 185, 1)' : '' }}>Portfolio</p>
             <p onClick={this.MyContact} style={{ color: this.state.showContact ? 'rgba(110, 202, 185, 1)' : '' }}>Связаться со мной</p>
            </div>
            <div className="menu-bar" onClick={this.displayMenu}>
@@ -86,10 +86,10 @@ class Name extends React.Component {
             <hr className={ this.state.showMenu ? 'active' : '' }/>
            </div>
           </div>
-         </div>
+         </header>
          <div className="name" style={{ display: this.state.showName ? 'flex' : "none" }}>
           <h1>Victor Soltan</h1>
-          <h1>Web Developer</h1>
+          <h1>Fullstack Web Developer</h1>
          </div>
          <div style={{ display: this.state.showAboutMe ? 'flex' : "none" }}>
           <AboutMe />

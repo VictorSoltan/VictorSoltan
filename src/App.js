@@ -4,7 +4,7 @@ import Name from './Name'
 import Social from './Social'
 
 
-function App() {
+export default function App() {
   return (
       <div className="wrapper">
        <div className="body-content">
@@ -19,5 +19,3 @@ function App() {
       </div>
   );
 }
-
-export default App;

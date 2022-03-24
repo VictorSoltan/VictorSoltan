@@ -1,9 +1,9 @@
 import React from 'react'
-import { TransitionGroup, CSSTransition} from 'react-transition-group'
+// import { TransitionGroup, CSSTransition} from 'react-transition-group'
 import archart from './portfolio/archart.png';
 import tehnopunki from './portfolio/tehnopunki.png';
 import leaf from './portfolio/leaf.png';
-import './portfolio.scss'
+import './styles/portfolio.scss'
 
 class Portfolio extends React.Component{
   state = {
@@ -49,16 +49,16 @@ class Portfolio extends React.Component{
     return (
       <div className="portfolio">
        <p>Мои работы:</p>
-       <TransitionGroup>
+       {/* <TransitionGroup>
         <CSSTransition
          transitionEnterTimeout={500}
-         transitionLeaveTimeout={300}>
+         transitionLeaveTimeout={300}> */}
           <div className="work-list">
            <img src={this.state.images[this.state.imageNumber]} alt={this.state.description[this.state.imageNumber]} />
            <p>{this.state.text[this.state.imageNumber]}</p>
           </div>
-         </CSSTransition>
-        </TransitionGroup>
+         {/* </CSSTransition>
+        </TransitionGroup> */}
         <div className="buttons">
         { workButtons }
         </div>

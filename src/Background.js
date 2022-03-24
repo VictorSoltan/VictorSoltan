@@ -1,11 +1,12 @@
 import React from 'react'
-import './background.scss'
+import './styles/background.scss'
 
-class Canvas extends React.Component {
-componentDidMount(){
-  this.backAnimation();
-}
-  backAnimation(){
+export default function Background(){
+  React.useEffect(() => {
+    backAnimation();
+  }, [])
+
+  function backAnimation(){
     let canvas = document.querySelector("canvas");
     let ctx = canvas.getContext('2d');
     let y;
@@ -77,16 +78,12 @@ componentDidMount(){
       let y = 135;
       let end = 0;
       let altitudeStart = 11;
-      let altitudeEnd = (canvas.height*0.55);
+      let altitudeEnd = (canvas.height*0.69);
       if(canvas.width <= 1024){
         altitudeStart = 11;
-        altitudeEnd = (canvas.height*0.5);
+        altitudeEnd = (canvas.height*0.84);
         y = 35;
         end = 35;
-      }else if(canvas.width <= 768){
-        altitudeEnd = (canvas.height*0.82);
-      }else if(canvas.width <= 480){
-        altitudeEnd = (canvas.height*0.8);
       }
       for(; y < (canvas.width - end);){
         waveValue[y] === true ? waveSpeed[y]++ : waveSpeed[y]--;
@@ -108,7 +105,7 @@ componentDidMount(){
         }
         if(canvas.width <= 768){
           waveStart = 0;
-          waveEnd =  canvas.width;
+          waveEnd =  500;
           waveMAX = 0;
         }
         for(let x = 0; x <= canvas.width; x++){
@@ -123,12 +120,8 @@ componentDidMount(){
     window.addEventListener('resize', init)
   }
 
-  render() {
 
   return (
-      <canvas className="canvas"></canvas>
-  );
+    <canvas className="canvas"></canvas>
+  )
 }
-}
-
-export default Canvas;

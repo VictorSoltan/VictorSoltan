@@ -6,12 +6,12 @@ class AboutMe extends React.Component {
     return (
       <div className="about-me">
         <p>
-         Здравствуйте, меня зовут Виктор Солтан, я веб-разработчик со опытом более 2-ух лет.
+          Hello! My name is Victor Soltan, I am a web developer with over 4 years of experience.
         </p>
         <p>
-         На данный момент работаю на фрилансе. Люблю свое занятие, в большей степени нравится возиться
-         с кодом и сложными техническими задачами, так-же стараюсь чтобы у работ которые я создаю
-         был интуитивно-понятный интерфейс и красивый дизайн. Рад обучаться новому, чем занимаюсь регулярно совершенствуя свои навыки.
+          I am currently freelancing. I love my job, I like to tinker more
+          with code and complex technical tasks, I also try to ensure that the works that I create
+          had an intuitive interface and beautiful design. I am glad to learn new things, which I do regularly improving my skills.
         </p>
       </div>
     )
