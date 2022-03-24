@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/VictorSoltan/static/css/main.5deffe90.css",
+    "main.css": "/VictorSoltan/static/css/main.8db1c54d.css",
     "main.js": "/VictorSoltan/static/js/main.63f1e08e.js",
     "static/media/tehnopunki.png": "/VictorSoltan/static/media/tehnopunki.58cf502ea26d4b6cbb2e.png",
     "static/media/archart.png": "/VictorSoltan/static/media/archart.5e849c9362b4d2b7c65f.png",
@@ -8,11 +8,11 @@
     "static/media/Gontserrat-Light.ttf": "/VictorSoltan/static/media/Gontserrat-Light.e4f507da23a5c0d38656.ttf",
     "static/media/blogger-sans.regular.otf": "/VictorSoltan/static/media/blogger-sans.regular.5fa2f7b82f0db86fbaa9.otf",
     "index.html": "/VictorSoltan/index.html",
-    "main.5deffe90.css.map": "/VictorSoltan/static/css/main.5deffe90.css.map",
+    "main.8db1c54d.css.map": "/VictorSoltan/static/css/main.8db1c54d.css.map",
     "main.63f1e08e.js.map": "/VictorSoltan/static/js/main.63f1e08e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5deffe90.css",
+    "static/css/main.8db1c54d.css",
     "static/js/main.63f1e08e.js"
   ]
 }
