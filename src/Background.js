@@ -7,36 +7,35 @@ export default function Background(){
   }, [])
 
   function backAnimation(){
-    let canvas = document.querySelector("canvas");
-    let ctx = canvas.getContext('2d');
-    let y;
-    let Amplitude = 35;
-    let AmplitudeValue = true;
-    let Amplnumb;
-    let displacement;
-    let waveStart;
-    let waveEnd;
-    let screenWidth = window.innerWidth;
-   if(window.innerWidth <= 1366){
-     screenWidth = 1366;
-   }
-   const waveSpeed = Array.from({length: screenWidth}, () => Math.floor(Math.random() * 1)+8);
-   function init() {
-     canvas.height = window.outerHeight;
-     canvas.width = window.outerWidth;
-   }
-   init()
-   let booleanValue = Array.from({length: canvas.height}, () => Math.floor(Math.random() * 2));
-   let waveValue = Array.from({length: canvas.height}, () => Math.floor(Math.random() * 2));
-   for(let noumero = 0; noumero < canvas.height; noumero++){
-     if(booleanValue[noumero] === 1){
-       waveValue[noumero] = true;
-     }else{
-       waveValue[noumero] = false;
-     }
-   }
-
-
+    let canvas = document.querySelector("canvas"),
+      ctx = canvas.getContext('2d'),
+      y,
+      Amplitude = 35,
+      AmplitudeValue = true,
+      Amplnumb,
+      displacement,
+      waveStart,
+      waveEnd,
+      screenWidth = window.innerWidth
+    
+    if(window.innerWidth <= 1366){
+      screenWidth = 1366;
+    }
+    const waveSpeed = Array.from({length: screenWidth}, () => Math.floor(Math.random() * 1)+8);
+    function init() {
+      canvas.height = window.outerHeight;
+      canvas.width = window.outerWidth;
+    }
+    init()
+    let booleanValue = Array.from({length: canvas.height}, () => Math.floor(Math.random() * 2));
+    let waveValue = Array.from({length: canvas.height}, () => Math.floor(Math.random() * 2));
+    for(let noumero = 0; noumero < canvas.height; noumero++){
+      if(booleanValue[noumero] === 1){
+        waveValue[noumero] = true;
+      }else{
+        waveValue[noumero] = false;
+      }
+    }
 
     Amplnumb = Array.from({length: canvas.width}, () => Math.floor(Math.random() * canvas.width/12))
 
@@ -47,27 +46,29 @@ export default function Background(){
       if(x > waveStart && x <= waveStart+waveMAX){
         displacement = (x - waveStart) / waveStart;
         if((waveSpeed[x] - waveSpeed[x+1]) > 1 || (waveSpeed[x-1] - waveSpeed[x]) > 1){
-          ctx.fillStyle = "#32A970";
+          ctx.fillStyle = "#3ec986";
         }
       }
       if(x < waveEnd && x >= waveStart+waveMAX){
         displacement = (waveEnd - x) / waveEnd;
         if((waveSpeed[x] - waveSpeed[x+1]) > 1 || (waveSpeed[x-1] - waveSpeed[x]) > 1){
-          ctx.fillStyle = "#32A970";
+          ctx.fillStyle = "#3ec986";
         }
       }
-      ctx.rect(x, y, 2, 1);
+      ctx.rect(x, y, 2, 2);
       ctx.fill();
       ctx.closePath();
     }
 
-    function draw( ) {
+    function draw() {
       ctx.clearRect(0,0,canvas.width,canvas.height);
+      
       function width() {
         canvas.width = window.innerWidth
         canvas.height = window.innerHeight
       }
       width()
+      
       window.addEventListener('resize', width)
       AmplitudeValue === true ? Amplitude++ : Amplitude--;
       if( Amplitude === 35 ){
@@ -94,6 +95,7 @@ export default function Background(){
         }
         y+=40;
       }
+
       for(let altitude = altitudeStart; altitude < altitudeEnd;){
         waveStart = Amplnumb[altitude] + 120;
         waveEnd = Amplnumb[altitude] + 460;
@@ -115,7 +117,7 @@ export default function Background(){
         altitude+=40;
       }
     }
-    setInterval(draw, 78);
+    setInterval(draw, 73);
 
     window.addEventListener('resize', init)
   }

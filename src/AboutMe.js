@@ -1,5 +1,7 @@
 import React from 'react'
-import './about-me.scss'
+import './styles/about-me.scss'
+
+import Qr from './portfolio/qr-code.png';
 
 class AboutMe extends React.Component {
   render(){
@@ -9,9 +11,18 @@ class AboutMe extends React.Component {
           Hello! My name is Victor Soltan, I am a web developer with over 4 years of experience.
         </p>
         <p>
-          I am currently freelancing. I love my job, I like to tinker more
-          with code and complex technical tasks, I also try to ensure that the works that I create
-          had an intuitive interface and beautiful design. I am glad to learn new things, which I do regularly improving my skills.
+          <b>Contacts:</b>
+          <br/>
+          <span>
+            my Email: <a href="mailto:victor.soltan.evg@gmail.com">victor.soltan.evg@gmail.com</a>
+          </span>
+          <br />
+          <span>
+            my Telegram: <a href="https://t.me/VictorSoltan">@VictorSoltan</a>
+          </span>
+        </p>
+        <p>
+          <img src={Qr} alt="qr" />
         </p>
       </div>
     )

@@ -3,7 +3,7 @@ import AboutMe from './AboutMe'
 import MySkills from './MySkills'
 import Portfolio from './Portfolio'
 import v from './portfolio/v.png';
-import './name.scss'
+import './styles/name.scss'
 
 
 class Name extends React.Component {
@@ -74,11 +74,11 @@ class Name extends React.Component {
           </div>
           <div className="menu">
            <div className={ this.state.showMenu ? 'points showPoints' : 'points'}>
-            <p onClick={this.AboutMe} style={{ color: this.state.showAboutMe ? 'rgba(120, 202, 185, 1)' : '' }}>About me</p>
-            <p onClick={this.MySkills} style={{ color: this.state.showSkills ? 'rgba(110, 202, 185, 1)' : '' }}>My skills</p>
-            <p onClick={this.Portfolio} style={{ color: this.state.showPortfolio ? 'rgba(110, 202, 185, 1)' : '' }}>Портфолио c работами</p>
-            <p onClick={this.Portfolio} style={{ color: this.state.showPortfolio ? 'rgba(110, 202, 185, 1)' : '' }}>Portfolio</p>
-            <p onClick={this.MyContact} style={{ color: this.state.showContact ? 'rgba(110, 202, 185, 1)' : '' }}>Связаться со мной</p>
+            <p onClick={this.AboutMe} style={{ color: this.state.showAboutMe ? '#7FD4DD' : '' }}>About me</p>
+            <p onClick={this.MySkills} style={{ color: this.state.showSkills ? '#7FD4DD' : '' }}>My skills</p>
+            <p onClick={this.Portfolio} style={{ color: this.state.showPortfolio ? '#7FD4DD' : '' }}>Portfolio with works</p>
+            <p onClick={this.Portfolio} style={{ color: this.state.showPortfolio ? '#7FD4DD' : '' }}>Portfolio</p>
+            <p onClick={this.MyContact} style={{ color: this.state.showContact ? '#7FD4DD' : '' }}>Связаться со мной</p>
            </div>
            <div className="menu-bar" onClick={this.displayMenu}>
             <hr className={ this.state.showMenu ? 'active' : '' }/>

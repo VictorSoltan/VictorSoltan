@@ -18,9 +18,14 @@
   }
   @media screen and (max-width: 768px) {
     top: 50vh;
-    width: 80%;
+    width: 92%;
+    left: 4%;
   }
-  @media screen and (max-width: 460px) {
+  @media screen and (max-height: 460px) {
+    top: 46vh;
+    width: 52%;
+    left: 14%;
+    margin: 0 auto;
   }
   p{
     @media screen and (max-width: 460px) {
@@ -28,12 +33,9 @@
     }
   }
   .work-list{
-    width: 130vw;
-    transition: 1s;
-    padding: 4px 2px 22px 2px;
-    background: rgba(240, 240, 240, 0.14);
     height: 36vh;
-    width: 72%;
+    width: 71%;
+    margin-top: 14px;
     @media screen and (max-width: 768px) {
       padding: 4px 2px 22px 2px;
       height: 30vh;
@@ -43,16 +45,29 @@
       height: 32vh;
       width: 100%;
     }
+    @media screen and (max-height: 480px) {
+      margin-top: 2px;
+    }
+    .slick-list {margin: 0 -5px;}
+    .slick-slide>div {padding: 0 5px;}
+    .work{
+      // padding: 22px;
+      background: rgba(240, 240, 240, 0.14);
+      margin-right: 110px;
+    }
+    h4{
+      margin: 2% 2%;
+    }
     img{
       display: flex;
       object-fit: cover;
       height: 90%;
-      width: 98%;
+      width: 96%;
       margin: 0 auto;
     }
     p {
       font-size: 20px;
-      margin: 2% 1%;
+      margin: 2% 3%;
       @media screen and (max-width: 768px) {
         font-size: 16px;
       }

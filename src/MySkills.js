@@ -1,27 +1,33 @@
 import React from 'react';
 import './styles/my-skills.scss'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faReact, faVuejs, faHtml5, faCss3Alt, faJs, faGit, faDocker, faLinux, faNpm, faSass } from '@fortawesome/free-brands-svg-icons'
+import HTML from './assets/html.png'
+import Css from './assets/css.png'
+import Js from './assets/js.png'
+import Vue from './assets/vue.png'
+import Sass from './assets/sass.png'
+import Docker from './assets/docker.png'
+import Atom from './assets/atom.png'
+import Py from './assets/python.png'
 
 class MySkills extends React.Component {
   state = {
     techs: [
-      { text: 'HTML5' },
-      { text: 'CSS3' },
-      { text: 'JavaScript' },
-      { text: 'VueJs (NuxtJs)' },
-      { text: 'Sass (less & scss)' },
-      { text: 'Docker' },
-      { text: 'ReactJs' },
-      { text: 'NodeJs' },
-      { text: 'Python' }
+      { text: 'HTML5', icon:  HTML},
+      { text: 'CSS3', icon: Css },
+      { text: 'JavaScript', icon: Js },
+      { text: 'VueJs (NuxtJs)', icon:  Vue},
+      { text: 'Sass (less & scss)', icon: Sass },
+      { text: 'Docker', icon:  Docker},
+      { text: 'ReactJs', icon:  Atom},
+      { text: 'NodeJs', icon: Js },
+      { text: 'Python', icon: Py }
     ],
   }
   render(){
     const techList = this.state.techs.map(tech => {
       return (
         <div>
-         {/* <FontAwesomeIcon icon={tech.icon} /> */}
+         <img src={tech.icon} alt={tech.text} />
          <p>{tech.text}</p>
         </div>
       )

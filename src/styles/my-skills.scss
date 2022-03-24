@@ -24,6 +24,9 @@
       font-size: 22px;
     }
   }
+  @media screen and (max-height: 480px) {
+    top: 58vh;
+  }
   h2{
     margin: 0.4em 0;
   }
@@ -44,8 +47,10 @@
         font-size: 16px;
       }
     }
-    svg{
+    img{
+      width: 28px;
       font-size: 32px;
+      filter: invert(80%);
       @media screen and (max-width: 1024px) {
         font-size: 25px;
       }
@@ -82,10 +87,10 @@
         margin: 1%;
       }
       p {
-        font-size: 18px;
+        font-size: 22px;
         margin-left: 8px;
         @media screen and (max-width: 1024px) {
-          font-size: 16px;
+          font-size: 20px;
         }
         @media screen and (max-width: 768px) {
           font-size: 18px;
