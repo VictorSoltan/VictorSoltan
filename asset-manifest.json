@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VictorSoltan/static/css/main.579084b3.css",
-    "main.js": "/VictorSoltan/static/js/main.4d856e96.js",
+    "main.js": "/VictorSoltan/static/js/main.dc5c1a7f.js",
     "static/media/tehnopunki.png": "/VictorSoltan/static/media/tehnopunki.58cf502ea26d4b6cbb2e.png",
     "static/media/archart.png": "/VictorSoltan/static/media/archart.5e849c9362b4d2b7c65f.png",
     "static/media/leaf.png": "/VictorSoltan/static/media/leaf.878eee1ab9f8fe183089.png",
@@ -9,14 +9,13 @@
     "static/media/blogger-sans.regular.otf": "/VictorSoltan/static/media/blogger-sans.regular.5fa2f7b82f0db86fbaa9.otf",
     "static/media/vue.png": "/VictorSoltan/static/media/vue.41a827fc6ae4e45784e6.png",
     "static/media/atom.png": "/VictorSoltan/static/media/atom.1f52ca253ce403eacf05.png",
-    "static/media/qr-code.png": "/VictorSoltan/static/media/qr-code.cc9eb6dd2eadcff02b45.png",
     "static/media/css.png": "/VictorSoltan/static/media/css.3eafe6322b0e7909c496.png",
     "index.html": "/VictorSoltan/index.html",
     "main.579084b3.css.map": "/VictorSoltan/static/css/main.579084b3.css.map",
-    "main.4d856e96.js.map": "/VictorSoltan/static/js/main.4d856e96.js.map"
+    "main.dc5c1a7f.js.map": "/VictorSoltan/static/js/main.dc5c1a7f.js.map"
   },
   "entrypoints": [
     "static/css/main.579084b3.css",
-    "static/js/main.4d856e96.js"
+    "static/js/main.dc5c1a7f.js"
   ]
 }
